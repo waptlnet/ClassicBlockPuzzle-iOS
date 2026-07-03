@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ClassicBlockPuzzleApp: App {
+struct BlockBlastPuzzleApp: App {
     @StateObject private var vm = GameViewModel()
     @StateObject private var skinManager = SkinManager()
     @StateObject private var soundManager = SoundManager.shared
@@ -105,7 +105,7 @@ struct HomeScreen: View {
                 .background(skin.buttonFill.opacity(0.6))
                 .cornerRadius(16)
 
-                // 主按钮
+                // 主按�?
                 VStack(spacing: 12) {
                     Button {
                         showGame = true
@@ -126,7 +126,7 @@ struct HomeScreen: View {
                         HomeButton("🏆", L10n.leaderboard) { showLeaderboard = true }
                         HomeButton("📊", L10n.statistics) { showStats = true }
                         HomeButton("🎨", L10n.skin) { showSkinPicker = true }
-                        HomeButton("❓", L10n.tutorial) { showTutorial = true }
+                        HomeButton("�?, L10n.tutorial) { showTutorial = true }
                     }
                 }
 

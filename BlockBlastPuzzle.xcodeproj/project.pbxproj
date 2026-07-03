@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D00000000000000000000001 /* ClassicBlockPuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000001 /* ClassicBlockPuzzleApp.swift */; };
+		D00000000000000000000001 /* BlockBlastPuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000001 /* BlockBlastPuzzleApp.swift */; };
 		D00000000000000000000002 /* BlockGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000002 /* BlockGenerator.swift */; };
 		D00000000000000000000003 /* DailyChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000003 /* DailyChallenge.swift */; };
 		D00000000000000000000004 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000004 /* GameLogic.swift */; };
@@ -39,7 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C00000000000000000000001 /* ClassicBlockPuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicBlockPuzzleApp.swift; sourceTree = "<group>"; };
+		C00000000000000000000001 /* BlockBlastPuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockBlastPuzzleApp.swift; sourceTree = "<group>"; };
 		C00000000000000000000002 /* BlockGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockGenerator.swift; sourceTree = "<group>"; };
 		C00000000000000000000003 /* DailyChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallenge.swift; sourceTree = "<group>"; };
 		C00000000000000000000004 /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		C00000000000000000000016 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		C00000000000000000000017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C00000000000000000000018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A0000000000000000000000E /* ClassicBlockPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicBlockPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0000000000000000000000E /* BlockBlastPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockBlastPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00000000000000000000019 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		C0000000000000000000001A /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		C0000000000000000000001B /* ArraySafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySafe.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A00000000000000000000002 /* ClassicBlockPuzzle */ = {
+		A00000000000000000000002 /* BlockBlastPuzzle */ = {
 			isa = PBXGroup;
 			children = (
 				B00000000000000000000001 /* App */,
@@ -97,13 +97,13 @@
 				C00000000000000000000017 /* Info.plist */,
 				C00000000000000000000018 /* Assets.xcassets */,
 			);
-			path = ClassicBlockPuzzle;
+			path = BlockBlastPuzzle;
 			sourceTree = "<group>";
 		};
 		A00000000000000000000003 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A0000000000000000000000E /* ClassicBlockPuzzle.app */,
+				A0000000000000000000000E /* BlockBlastPuzzle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,7 +111,7 @@
 		B00000000000000000000001 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				C00000000000000000000001 /* ClassicBlockPuzzleApp.swift */,
+				C00000000000000000000001 /* BlockBlastPuzzleApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -231,9 +231,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A00000000000000000000004 /* ClassicBlockPuzzle */ = {
+		A00000000000000000000004 /* BlockBlastPuzzle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A00000000000000000000009 /* Build configuration list for PBXNativeTarget "ClassicBlockPuzzle" */;
+			buildConfigurationList = A00000000000000000000009 /* Build configuration list for PBXNativeTarget "BlockBlastPuzzle" */;
 			buildPhases = (
 				A00000000000000000000005 /* Sources */,
 				A00000000000000000000006 /* Frameworks */,
@@ -243,9 +243,9 @@
 			);
 			dependencies = (
 			);
-			name = ClassicBlockPuzzle;
-			productName = ClassicBlockPuzzle;
-			productReference = A0000000000000000000000E /* ClassicBlockPuzzle.app */;
+			name = BlockBlastPuzzle;
+			productName = BlockBlastPuzzle;
+			productReference = A0000000000000000000000E /* BlockBlastPuzzle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -263,7 +263,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A00000000000000000000008 /* Build configuration list for PBXProject "ClassicBlockPuzzle" */;
+			buildConfigurationList = A00000000000000000000008 /* Build configuration list for PBXProject "BlockBlastPuzzle" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
@@ -285,12 +285,12 @@
 				tr,
 				Base,
 			);
-			mainGroup = A00000000000000000000002 /* ClassicBlockPuzzle */;
+			mainGroup = A00000000000000000000002 /* BlockBlastPuzzle */;
 			productRefGroup = A00000000000000000000003 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A00000000000000000000004 /* ClassicBlockPuzzle */,
+				A00000000000000000000004 /* BlockBlastPuzzle */,
 			);
 		};
 /* End PBXProject section */
@@ -310,7 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D00000000000000000000001 /* ClassicBlockPuzzleApp.swift in Sources */,
+				D00000000000000000000001 /* BlockBlastPuzzleApp.swift in Sources */,
 				D00000000000000000000002 /* BlockGenerator.swift in Sources */,
 				D00000000000000000000003 /* DailyChallenge.swift in Sources */,
 				D00000000000000000000004 /* GameLogic.swift in Sources */,
@@ -472,8 +472,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ClassicBlockPuzzle/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "经典方块拼图";
+				INFOPLIST_FILE = BlockBlastPuzzle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "方块爆炸拼图";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -484,7 +484,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.classicblockpuzzle.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meimi.blockblastpuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -503,8 +503,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ClassicBlockPuzzle/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "经典方块拼图";
+				INFOPLIST_FILE = BlockBlastPuzzle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "方块爆炸拼图";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -515,7 +515,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.classicblockpuzzle.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meimi.blockblastpuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -529,7 +529,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A00000000000000000000008 /* Build configuration list for PBXProject "ClassicBlockPuzzle" */ = {
+		A00000000000000000000008 /* Build configuration list for PBXProject "BlockBlastPuzzle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0000000000000000000000A /* Debug */,
@@ -538,7 +538,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A00000000000000000000009 /* Build configuration list for PBXNativeTarget "ClassicBlockPuzzle" */ = {
+		A00000000000000000000009 /* Build configuration list for PBXNativeTarget "BlockBlastPuzzle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0000000000000000000000C /* Debug */,

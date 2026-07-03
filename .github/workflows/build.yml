@@ -9,8 +9,8 @@ on:
 
 jobs:
   build:
-    name: Build ClassicBlockPuzzle
-    runs-on: macos-15   # 最新 macOS + Xcode 16
+    name: Build BlockBlastPuzzle
+    runs-on: macos-15   # 最�?macOS + Xcode 16
 
     steps:
       - name: Checkout
@@ -23,13 +23,13 @@ jobs:
         run: xcodebuild -version
 
       - name: Show available schemes
-        run: xcodebuild -project ClassicBlockPuzzle.xcodeproj -list
+        run: xcodebuild -project BlockBlastPuzzle.xcodeproj -list
 
       - name: Build (Release)
         run: |
           xcodebuild \
-            -project ClassicBlockPuzzle.xcodeproj \
-            -scheme ClassicBlockPuzzle \
+            -project BlockBlastPuzzle.xcodeproj \
+            -scheme BlockBlastPuzzle \
             -destination 'generic/platform=iOS Simulator' \
             -configuration Release \
             -sdk iphonesimulator \
@@ -41,7 +41,7 @@ jobs:
       - name: Upload .app artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ClassicBlockPuzzle-App
+          name: BlockBlastPuzzle-App
           path: |
             ~/Library/Developer/Xcode/DerivedData/**/Build/Products/Release-iphonesimulator/*.app
           retention-days: 30
