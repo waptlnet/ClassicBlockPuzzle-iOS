@@ -31,8 +31,8 @@
 		D00000000000000000000016 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000016 /* Pages.swift */; };
 		D00000000000000000000017 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000019 /* L10n.swift */; };
 		D00000000000000000000018 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001A /* AnimationManager.swift */; };
-		D00000000000000000000019 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001B /* Array+Safe.swift */; };
-		D0000000000000000000001A /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001C /* Color+Hex.swift */; };
+		D00000000000000000000019 /* ArraySafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001B /* ArraySafe.swift */; };
+		D0000000000000000000001A /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001C /* ColorHex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,8 +63,8 @@
 		A0000000000000000000000E /* ClassicBlockPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicBlockPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00000000000000000000019 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		C0000000000000000000001A /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
-		C0000000000000000000001B /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array+Safe.swift; sourceTree = "<group>"; };
-		C0000000000000000000001C /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color+Hex.swift; sourceTree = "<group>"; };
+		C0000000000000000000001B /* ArraySafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySafe.swift; sourceTree = "<group>"; };
+		C0000000000000000000001C /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,8 +213,8 @@
 		B0000000000000000000000C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C0000000000000000000001B /* Array+Safe.swift */,
-				C0000000000000000000001C /* Color+Hex.swift */,
+				C0000000000000000000001B /* ArraySafe.swift */,
+				C0000000000000000000001C /* ColorHex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -325,8 +325,8 @@
 				D00000000000000000000016 /* Pages.swift in Sources */,
 				D00000000000000000000017 /* L10n.swift in Sources */,
 				D00000000000000000000018 /* AnimationManager.swift in Sources */,
-				D00000000000000000000019 /* Array+Safe.swift in Sources */,
-				D0000000000000000000001A /* Color+Hex.swift in Sources */,
+				D00000000000000000000019 /* ArraySafe.swift in Sources */,
+				D0000000000000000000001A /* ColorHex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
