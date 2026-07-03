@@ -1,9 +1,9 @@
-# ClassicBlockPuzzle — iOS 架构文档
+# BlockBlastPuzzle — iOS 架构文档
 
 > **最后更新**: 2026-07-02 (v3 — 单元测试 + 暗色主题 + AnimationManager + 危险脉冲 + 音效对齐)
 > **语言**: Swift 5.9+ · SwiftUI 5 · iOS 16.0+  
 > **架构**: MVVM（`@MainActor ObservableObject` + 值类型 `GameLogic`）  
-> **Bundle ID**: `com.classicblockpuzzle.ios` · Display: 方块爆炸拼图 · EN: Block Blast Puzzle  
+> **Bundle ID**: `com.meimi.blockblastpuzzle` · Display: 方块爆炸拼图 · EN: Block Blast Puzzle  
 > **项目规模**: 29 个 `.swift` 源码 + 9 个测试文件 · 15 种语言 · 10 个功能目录
 
 ---
@@ -11,21 +11,21 @@
 ## 一、完整目录树
 
 ```
-ClassicBlockPuzzle-iOS/
+BlockBlastPuzzle-iOS/
 ├── .gitignore                               ← Xcode 忽略规则
 ├── ARCHITECTURE.md                          ← 你正在看的文档
-├── ClassicBlockPuzzle.xcodeproj/
+├── BlockBlastPuzzle.xcodeproj/
 │   └── project.pbxproj                      ← 含 15 语言 knownRegions
 ├── scripts/
 │   └── screenshot_generator.sh              ← App Store 截图自动化脚本
 │
-├── ClassicBlockPuzzle/                      ← ★ 源代码根
+├── BlockBlastPuzzle/                      ← ★ 源代码根
     │
     ├── Info.plist                           ← Bundle 标识 · CFBundleLocalizations(15) · 竖屏
     ├── Assets.xcassets/                     ← AppIcon / AccentColor
     │
     ├── App/
-    │   └── ClassicBlockPuzzleApp.swift       ← @main 入口 · 主页 · 高分/连签 · 4 个导航按钮
+    │   └── BlockBlastPuzzleApp.swift       ← @main 入口 · 主页 · 高分/连签 · 4 个导航按钮
     │
     ├── Game/                                ← ★ 纯逻辑 · 零 UI 依赖
     │   ├── Models/
@@ -77,7 +77,7 @@ ClassicBlockPuzzle-iOS/
         ├── Localizable.strings               ← 85+ 条 UI 翻译（含 level_name_1~10, ach_desc_xxx）
         └── InfoPlist.strings                  ← 权限描述翻译
 
-└── ClassicBlockPuzzleTests/                  ← ★ 9 个测试文件 · 108+ 用例
+└── BlockBlastPuzzleTests/                  ← ★ 9 个测试文件 · 108+ 用例
     ├── Game/
     │   ├── BlockShapeTest.swift          ← 18 形状 · 旋转 · 坐标一致性
     │   ├── GridTest.swift                ← 初始/放置/消除/冰冻/彩虹/炸弹
@@ -147,11 +147,11 @@ ClassicBlockPuzzle-iOS/
 
 ## 四、核心模块详解
 
-### 4.1 App 入口 — `ClassicBlockPuzzleApp.swift`
+### 4.1 App 入口 — `BlockBlastPuzzleApp.swift`
 
 ```swift
 @main
-struct ClassicBlockPuzzleApp: App {
+struct BlockBlastPuzzleApp: App {
     @StateObject private var vm = GameViewModel()
     @StateObject private var skinManager = SkinManager()
     @StateObject private var soundManager = SoundManager.shared
@@ -336,8 +336,8 @@ L10n.swift
 
 ## 八、与 Android 版差异对照
 
-> Android 版路径：`D:\7tan\ClassicBlockPuzzle` · Kotlin + Compose · 42 个 `.kt` 文件  
-> iOS 版路径：`D:\ClassicBlockPuzzle-iOS` · SwiftUI · 29 个 `.swift` 文件 + 9 个测试文件
+> Android 版路径：`D:\7tan\BlockBlastPuzzle` · Kotlin + Compose · 42 个 `.kt` 文件  
+> iOS 版路径：`D:\BlockBlastPuzzle-iOS` · SwiftUI · 29 个 `.swift` 文件 + 9 个测试文件
 
 ### 8.1 模块对照表
 
@@ -355,11 +355,11 @@ L10n.swift
 | **排行榜** | `LeaderboardManager.kt` (独立) | 内嵌 `GameViewModel.swift` → `leaderboardEntries` | 功能一致，Top 20 |
 | **统计** | `GameStats.kt` (独立) | 统计字段散落 `AppPreferences.swift` | iOS 无独立统计模型 |
 | **教程** | `TutorialManager.kt` (7 步) | `TutorialManager.swift` (5 步) | iOS 少 2 步 (WELCOME/ROTATE/DRAG/CLEAR/SPECIAL_BLOCK/POWER_UPS/GAME_MODES)；Android 还含 `preFillGridForTutorial` 预填网格 |
-| **主入口** | `MainActivity.kt` | `ClassicBlockPuzzleApp.swift` | ✅ |
+| **主入口** | `MainActivity.kt` | `BlockBlastPuzzleApp.swift` | ✅ |
 | **设置** | `SettingsDialog.kt` (Compose M2) | `SettingsView` in `Dialogs.swift` | ✅ SFX/BGM/协议 |
 | **GameOver** | `GameOverDialog.kt` | `GameOverView` in `Dialogs.swift` | ✅ |
 | **视图架构** | `GameView.kt` + 5 个 Renderer + TouchController + AnimationManager + GameLayout | `GameView.swift`(单文件 Canvas) + `AnimationManager.swift` | iOS 用 SwiftUI Canvas 替代多模块拆分；iOS 已实现 7 种动画管理器 (消除闪光/分数弹跳/连击特效/危险脉冲/完美清空/炸弹闪光/提示高亮) |
-| **暗色模式** | `Theme.kt` — 完整深色主题 (`ClassicBlockDarkColors`) | ✅ `Models/AppTheme.swift` | iOS 含浅色/深色完整色板 + `AppearanceMode` 三态切换 (system/light/dark) |
+| **暗色模式** | `Theme.kt` — 完整深色主题 (`BlockBlastDarkColors`) | ✅ `Models/AppTheme.swift` | iOS 含浅色/深色完整色板 + `AppearanceMode` 三态切换 (system/light/dark) |
 | **危险预警** | `updateDangerPulse()` — 填充率 >70% 警戒脉冲，>85% 快脉 + 微震 | ✅ `AnimationManager.triggerDangerPulse(fillRate:)` | 每次放置后调用；>70% 慢脉冲，>85% 快脉冲 |
 
 ### 8.2 暂未移植的功能
@@ -373,8 +373,8 @@ L10n.swift
 | **触觉反馈** (Haptic) | Android `Vibrator` + `VibrationEffect` | ✅ `HapticManager` (UIImpactFeedbackGenerator) | 🟢 已完成 |
 | **自动更新** (UpdateManager) | 协程 + 断点续传下载 APK | N/A (App Store 自动处理) | — |
 | **百度统计** | `Baidu_Mobstat_SDK_1.7.jar` | N/A (不接入) | — |
-| **单元测试** | 9 个测试文件 (SoundManagerSynthesisTest, BlockShapeTest, GridTest, ScoreSysTest, GameLogicTest, BlockGeneratorTest, GeneratorConfigTest, DailyChallengeTest, SituationEvalTest) | ✅ 9 个测试文件 (`ClassicBlockPuzzleTests/`) — 含 108+ 测试用例 | 🟢 已完成 |
-| **暗色模式** (Dark Theme) | `Theme.kt` — `ClassicBlockDarkColors` 深色主题 | ✅ `Models/AppTheme.swift` — 含浅色/深色完整色板 + `.withAppTheme()` modifier | 🟢 已完成 |
+| **单元测试** | 9 个测试文件 (SoundManagerSynthesisTest, BlockShapeTest, GridTest, ScoreSysTest, GameLogicTest, BlockGeneratorTest, GeneratorConfigTest, DailyChallengeTest, SituationEvalTest) | ✅ 9 个测试文件 (`BlockBlastPuzzleTests/`) — 含 108+ 测试用例 | 🟢 已完成 |
+| **暗色模式** (Dark Theme) | `Theme.kt` — `BlockBlastDarkColors` 深色主题 | ✅ `Models/AppTheme.swift` — 含浅色/深色完整色板 + `.withAppTheme()` modifier | 🟢 已完成 |
 | **动画管理器** (AnimationManager) | 7 种动画 (消除闪烁/分数弹跳/连击特效/危险脉冲/完美清空/炸弹闪光/提示高亮) | ✅ `Services/AnimationManager.swift` — 7 种动画已集成 GameView | 🟢 已完成 |
 | **危险预警** (Danger Pulse) | `updateDangerPulse()` — 填充率 >70% 警戒脉冲，>85% 快脉+微震 | ✅ 集成于 `GameView.placeBlock` 后调用 `triggerDangerPulse(fillRate:)` | 🟢 已完成 |
 | **Color(hex:) 扩展** | — | ✅ `Extensions/Color+Hex.swift` (UInt + String 双入口) | 🟢 已完成 |

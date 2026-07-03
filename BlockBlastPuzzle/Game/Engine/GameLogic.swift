@@ -82,7 +82,7 @@ struct GameLogic {
         if block.type == .bomb {
             let centerR = baseR + block.shape.height / 2
             let centerC = baseC + block.shape.width / 2
-            grid.bombExplode(centerRow: centerR, centerCol: centerC)
+            _ = grid.bombExplode(centerRow: centerR, centerCol: centerC)
 
             let (chainRows, chainCols) = grid.findFullLines()
             lastClearedRows = chainRows

@@ -1,5 +1,5 @@
 import XCTest
-@testable import ClassicBlockPuzzle
+@testable import BlockBlastPuzzle
 
 /// 网格测试：放置、消除、炸弹、冰冻、彩虹
 final class GridTest: XCTestCase {

@@ -1,5 +1,5 @@
 import XCTest
-@testable import ClassicBlockPuzzle
+@testable import BlockBlastPuzzle
 
 /// 评分系统测试：放置分、消除分、连击倍增、完美清空、同色奖励
 final class ScoreSystemTest: XCTestCase {

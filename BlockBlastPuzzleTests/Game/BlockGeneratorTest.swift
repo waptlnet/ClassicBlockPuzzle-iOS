@@ -1,5 +1,5 @@
 import XCTest
-@testable import ClassicBlockPuzzle
+@testable import BlockBlastPuzzle
 
 /// 方块生成器测试：批量大小、可解性约束、保底小方块、种子可重现、关卡模式禁用冰冻
 final class BlockGeneratorTest: XCTestCase {

@@ -1,5 +1,5 @@
 import XCTest
-@testable import ClassicBlockPuzzle
+@testable import BlockBlastPuzzle
 
 /// 局势评估器测试：填充率、危险等级、卡死计数
 final class SituationEvaluatorTest: XCTestCase {

@@ -1,10 +1,10 @@
 #!/bin/bash
-# App Store Screenshot Generator — ClassicBlockPuzzle
+# App Store Screenshot Generator — BlockBlastPuzzle
 # Usage: Copy this to your Mac, run in project root
 # Prerequisites: Xcode CLI, Xcode Simulator booted
 
-PROJECT="ClassicBlockPuzzle.xcodeproj"
-SCHEME="ClassicBlockPuzzle"
+PROJECT="BlockBlastPuzzle.xcodeproj"
+SCHEME="BlockBlastPuzzle"
 OUT_DIR="./screenshots"
 LANGUAGES=("en" "zh-Hans" "ja" "ko" "es" "fr" "de" "pt-BR" "ru" "ar" "th" "vi" "id" "it" "tr")
 
@@ -18,14 +18,14 @@ DEVICE_55="iPhone 8 Plus"       # 5.5"
 for device in "$DEVICE_67"; do
     echo "=== Booting $device ==="
     xcrun simctl boot "$device" 2>/dev/null || true
-    xcrun simctl install booted "$(find ~/Library/Developer/Xcode/DerivedData -name 'ClassicBlockPuzzle.app' | head -1)"
+    xcrun simctl install booted "$(find ~/Library/Developer/Xcode/DerivedData -name 'BlockBlastPuzzle.app' | head -1)"
     
     # Step 2: Set language
     xcrun simctl spawn booted defaults write -g AppleLocale "en_US"
-    xcrun simctl terminate booted com.classicblockpuzzle.ios
+    xcrun simctl terminate booted com.BlockBlastPuzzle.ios
     
     # Step 3: Launch & capture
-    xcrun simctl launch booted com.classicblockpuzzle.ios
+    xcrun simctl launch booted com.BlockBlastPuzzle.ios
     sleep 4
     
     # Screenshot

@@ -1,10 +1,10 @@
 import SwiftUI
 
-// MARK: - 主题色定义（对标 Android Theme.kt 的 ClassicBlockColors / ClassicBlockDarkColors）
+// MARK: - 主题色定义（对标 Android Theme.kt 的 BlockBlastColors / BlockBlastDarkColors）
 
 /// App 全局主题色常量
 enum AppTheme {
-    // 浅色主题（对标 ClassicBlockColors）
+    // 浅色主题（对标 BlockBlastColors）
     static let lightPrimary = Color(hex: 0x4A90D9)
     static let lightOnPrimary = Color.white
     static let lightPrimaryVariant = Color(hex: 0xD6E8FF)
@@ -14,7 +14,7 @@ enum AppTheme {
     static let lightOnSurface = Color(hex: 0x1C1B1F)
     static let lightOnBackground = Color(hex: 0x1C1B1F)
 
-    // 深色主题（对标 ClassicBlockDarkColors）
+    // 深色主题（对标 BlockBlastDarkColors）
     static let darkPrimary = Color(hex: 0x8CB8F0)
     static let darkOnPrimary = Color(hex: 0x003258)
     static let darkPrimaryVariant = Color(hex: 0x1A3A5C)

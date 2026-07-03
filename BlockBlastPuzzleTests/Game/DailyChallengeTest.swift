@@ -1,5 +1,5 @@
 import XCTest
-@testable import ClassicBlockPuzzle
+@testable import BlockBlastPuzzle
 
 /// 每日挑战测试：种子一致性、日期格式、记录与查询
 final class DailyChallengeTest: XCTestCase {

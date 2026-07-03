@@ -1,5 +1,5 @@
 import XCTest
-@testable import ClassicBlockPuzzle
+@testable import BlockBlastPuzzle
 
 /// 音效管理器测试：公开 API 不崩溃、静音状态切换、BGM 控制
 /// 注：内部合成方法为 private，无法直接测试 PCM 样本；

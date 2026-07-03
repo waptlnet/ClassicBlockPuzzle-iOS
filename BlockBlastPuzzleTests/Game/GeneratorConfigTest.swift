@@ -1,5 +1,5 @@
 import XCTest
-@testable import ClassicBlockPuzzle
+@testable import BlockBlastPuzzle
 
 /// GeneratorConfig 配置参数与权重函数测试
 final class GeneratorConfigTest: XCTestCase {

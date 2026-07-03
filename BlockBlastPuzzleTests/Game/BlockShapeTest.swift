@@ -1,5 +1,5 @@
 import XCTest
-@testable import ClassicBlockPuzzle
+@testable import BlockBlastPuzzle
 
 /// 方块形状测试：18 种基础形状、旋转、尺寸计算
 final class BlockShapeTest: XCTestCase {

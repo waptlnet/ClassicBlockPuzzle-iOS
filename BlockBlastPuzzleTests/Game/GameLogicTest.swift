@@ -1,5 +1,5 @@
 import XCTest
-@testable import ClassicBlockPuzzle
+@testable import BlockBlastPuzzle
 
 /// GameLogic 主状态机测试：放置、旋转、消除、GameOver、撤销快照、提示
 final class GameLogicTest: XCTestCase {
