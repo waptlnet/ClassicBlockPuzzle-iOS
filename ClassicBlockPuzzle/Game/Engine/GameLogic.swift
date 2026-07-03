@@ -13,8 +13,8 @@ struct GameStateSnapshot: Codable {
 /// 游戏主逻辑 — 与 Android GameLogic 完全一致
 struct GameLogic {
     let gridSize: Int
-    private(set) var grid: Grid
-    private(set) var pendingBlocks: [PendingBlock]
+    var grid: Grid
+    var pendingBlocks: [PendingBlock]
     private(set) var scorer: ScoreSystem
     let generator: BlockGenerator
 

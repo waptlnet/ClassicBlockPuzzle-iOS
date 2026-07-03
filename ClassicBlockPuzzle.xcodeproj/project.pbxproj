@@ -33,6 +33,9 @@
 		D00000000000000000000018 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001A /* AnimationManager.swift */; };
 		D00000000000000000000019 /* ArraySafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001B /* ArraySafe.swift */; };
 		D0000000000000000000001A /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001C /* ColorHex.swift */; };
+		D0000000000000000000001B /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001D /* HapticManager.swift */; };
+		D0000000000000000000001C /* ScreenShakeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001E /* ScreenShakeManager.swift */; };
+		D0000000000000000000001D /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001F /* AppTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		C0000000000000000000001A /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		C0000000000000000000001B /* ArraySafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySafe.swift; sourceTree = "<group>"; };
 		C0000000000000000000001C /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
+		C0000000000000000000001D /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		C0000000000000000000001E /* ScreenShakeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShakeManager.swift; sourceTree = "<group>"; };
+		C0000000000000000000001F /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				C0000000000000000000000D /* Achievement.swift */,
+				C0000000000000000000001F /* AppTheme.swift */,
 				C0000000000000000000000E /* Skin.swift */,
 			);
 			path = Models;
@@ -161,6 +168,8 @@
 				C00000000000000000000010 /* SoundManager.swift */,
 				C00000000000000000000011 /* TutorialManager.swift */,
 				C0000000000000000000001A /* AnimationManager.swift */,
+				C0000000000000000000001D /* HapticManager.swift */,
+				C0000000000000000000001E /* ScreenShakeManager.swift */,
 				C00000000000000000000019 /* L10n.swift */,
 			);
 			path = Services;
@@ -327,6 +336,9 @@
 				D00000000000000000000018 /* AnimationManager.swift in Sources */,
 				D00000000000000000000019 /* ArraySafe.swift in Sources */,
 				D0000000000000000000001A /* ColorHex.swift in Sources */,
+				D0000000000000000000001B /* HapticManager.swift in Sources */,
+				D0000000000000000000001C /* ScreenShakeManager.swift in Sources */,
+				D0000000000000000000001D /* AppTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
