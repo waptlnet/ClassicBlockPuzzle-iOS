@@ -5,12 +5,12 @@ on:
     branches: [main, master]
   pull_request:
     branches: [main, master]
-  workflow_dispatch:   # 允许手动触发
+  workflow_dispatch:
 
 jobs:
   build:
     name: Build BlockBlastPuzzle
-    runs-on: macos-15   # 最�?macOS + Xcode 16
+    runs-on: macos-15
 
     steps:
       - name: Checkout
