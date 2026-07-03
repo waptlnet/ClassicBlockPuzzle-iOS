@@ -30,6 +30,9 @@
 		D00000000000000000000015 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000015 /* GameView.swift */; };
 		D00000000000000000000016 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000016 /* Pages.swift */; };
 		D00000000000000000000017 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000019 /* L10n.swift */; };
+		D00000000000000000000018 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001A /* AnimationManager.swift */; };
+		D00000000000000000000019 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001B /* Array+Safe.swift */; };
+		D0000000000000000000001A /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001C /* Color+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,9 @@
 		C00000000000000000000018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0000000000000000000000E /* ClassicBlockPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicBlockPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00000000000000000000019 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		C0000000000000000000001A /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		C0000000000000000000001B /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array+Safe.swift; sourceTree = "<group>"; };
+		C0000000000000000000001C /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color+Hex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 				B00000000000000000000002 /* Game */,
 				B00000000000000000000005 /* Models */,
 				B00000000000000000000006 /* Services */,
+				B0000000000000000000000C /* Extensions */,
 				B00000000000000000000007 /* ViewModel */,
 				B00000000000000000000008 /* Views */,
 				C00000000000000000000017 /* Info.plist */,
@@ -153,6 +160,7 @@
 				C0000000000000000000000F /* ParticleSystem.swift */,
 				C00000000000000000000010 /* SoundManager.swift */,
 				C00000000000000000000011 /* TutorialManager.swift */,
+				C0000000000000000000001A /* AnimationManager.swift */,
 				C00000000000000000000019 /* L10n.swift */,
 			);
 			path = Services;
@@ -200,6 +208,15 @@
 				C00000000000000000000016 /* Pages.swift */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000000C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000001B /* Array+Safe.swift */,
+				C0000000000000000000001C /* Color+Hex.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +324,9 @@
 				D00000000000000000000015 /* GameView.swift in Sources */,
 				D00000000000000000000016 /* Pages.swift in Sources */,
 				D00000000000000000000017 /* L10n.swift in Sources */,
+				D00000000000000000000018 /* AnimationManager.swift in Sources */,
+				D00000000000000000000019 /* Array+Safe.swift in Sources */,
+				D0000000000000000000001A /* Color+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,10 +34,12 @@ final class SoundManager: ObservableObject {
 
         buffer.frameLength = frameCount
         let data = buffer.floatChannelData![0]
-        for i in 0..<Int(frameCount) {
-            let t = Double(i) / sampleRate
-            let envelope = Float(exp(-t * 8.0)) // 衰减
-            data[i] = sin(2.0 * .pi * Double(freq) * t) * volume * envelope
+        let frameCountInt = Int(frameCount)
+        for i in 0..<frameCountInt {
+            let t: Double = Double(i) / sampleRate
+            let envelope: Float = Float(exp(-t * 8.0))
+            let sample: Float = sin(Float(2.0 * .pi) * Float(freq) * Float(t)) * volume * envelope
+            data[i] = sample
         }
 
         let player = AVAudioPlayerNode()
@@ -64,11 +66,13 @@ final class SoundManager: ObservableObject {
 
         buffer.frameLength = frameCount
         let data = buffer.floatChannelData![0]
-        for i in 0..<Int(frameCount) {
-            let t = Double(i) / sampleRate
-            let envelope = Float(exp(-t * 12.0))
-            let phase = 2.0 * .pi * Double(freq) * t
-            data[i] = (sin(phase) >= 0 ? 1.0 : -1.0) * Float(volume) * envelope
+        let frameCountInt = Int(frameCount)
+        for i in 0..<frameCountInt {
+            let t: Double = Double(i) / sampleRate
+            let envelope: Float = Float(exp(-t * 12.0))
+            let phase: Double = 2.0 * .pi * Double(freq) * t
+            let square: Float = (sin(phase) >= 0 ? 1.0 : -1.0) * volume * envelope
+            data[i] = square
         }
 
         let player = AVAudioPlayerNode()
@@ -90,13 +94,15 @@ final class SoundManager: ObservableObject {
 
         buffer.frameLength = frameCount
         let data = buffer.floatChannelData![0]
-        for i in 0..<Int(frameCount) {
-            let t = Double(i) / sampleRate
-            let progress = Double(i) / Double(frameCount)
-            let idx = min(Int(progress * Double(freqs.count)), freqs.count - 1)
-            let freq = freqs[idx]
-            let envelope = Float(exp(-t * 10.0))
-            data[i] = sin(2.0 * .pi * Double(freq) * t) * volume * envelope
+        let frameCountInt = Int(frameCount)
+        let freqCount = freqs.count
+        for i in 0..<frameCountInt {
+            let t: Double = Double(i) / sampleRate
+            let progress: Double = Double(i) / Double(frameCount)
+            let idx: Int = min(Int(progress * Double(freqCount)), freqCount - 1)
+            let freq: Float = freqs[idx]
+            let envelope: Float = Float(exp(-t * 10.0))
+            data[i] = sin(Float(2.0 * .pi) * freq * Float(t)) * volume * envelope
         }
 
         let player = AVAudioPlayerNode()
@@ -116,9 +122,10 @@ final class SoundManager: ObservableObject {
         guard let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: frameCount) else { return }
         buffer.frameLength = frameCount
         let data = buffer.floatChannelData![0]
-        for i in 0..<Int(frameCount) {
-            let t = Double(i) / sampleRate
-            let envelope = Float(exp(-t * 5.0))
+        let frameCountInt = Int(frameCount)
+        for i in 0..<frameCountInt {
+            let t: Double = Double(i) / sampleRate
+            let envelope: Float = Float(exp(-t * 5.0))
             data[i] = Float.random(in: -0.5...0.5) * volume * envelope
         }
         let player = AVAudioPlayerNode()
@@ -140,12 +147,13 @@ final class SoundManager: ObservableObject {
 
         buffer.frameLength = frameCount
         let data = buffer.floatChannelData![0]
-        for i in 0..<Int(frameCount) {
-            let t = Double(i) / sampleRate
-            let progress = t / duration
-            let freq = Double(start) + (Double(end) - Double(start)) * progress
-            let envelope = Float(exp(-t * 4.0))
-            data[i] = sin(2.0 * .pi * freq * t) * volume * envelope
+        let frameCountInt = Int(frameCount)
+        for i in 0..<frameCountInt {
+            let t: Double = Double(i) / sampleRate
+            let progress: Double = t / duration
+            let freq: Double = Double(start) + (Double(end) - Double(start)) * progress
+            let envelope: Float = Float(exp(-t * 4.0))
+            data[i] = sin(Float(2.0 * .pi) * Float(freq) * Float(t)) * volume * envelope
         }
 
         let player = AVAudioPlayerNode()
@@ -167,12 +175,14 @@ final class SoundManager: ObservableObject {
 
         buffer.frameLength = frameCount
         let data = buffer.floatChannelData![0]
-        for i in 0..<Int(frameCount) {
-            let t = Double(i) / sampleRate
-            let envelope = Float(exp(-t * 6.0))
+        let frameCountInt = Int(frameCount)
+        let freqsFloat = freqs.map { Float($0) }
+        for i in 0..<frameCountInt {
+            let t: Double = Double(i) / sampleRate
+            let envelope: Float = Float(exp(-t * 6.0))
             var sum: Float = 0
-            for freq in freqs {
-                sum += sin(2.0 * .pi * Double(freq) * t)
+            for freq in freqsFloat {
+                sum += sin(Float(2.0 * .pi) * freq * Float(t))
             }
             data[i] = (sum / Float(freqs.count)) * volume * envelope
         }

@@ -147,7 +147,7 @@ final class BlockGenerator {
             r -= w
             if r <= 0 { return type }
         }
-        return weights.keys.sorted().last ?? .normal
+        return weights.sorted(by: { $0.key.rawValue < $1.key.rawValue }).last?.key ?? .normal
     }
 
     private func typeWeights(
@@ -170,9 +170,9 @@ final class BlockGenerator {
             }
         }()
 
-        return base
-            .mapValues { (type, w) in cooldown.isCooling(type) ? w * GeneratorConfig.cooldownMultiplier : w }
-            .filter { !($0.key == .frozen && !allowFrozen) }
+        return Dictionary(uniqueKeysWithValues: base.map { (type, w) in
+            (type, cooldown.isCooling(type) ? w * GeneratorConfig.cooldownMultiplier : w)
+        }).filter { !($0.key == .frozen && !allowFrozen) }
     }
 
     private func shouldGuarantee() -> Bool {
