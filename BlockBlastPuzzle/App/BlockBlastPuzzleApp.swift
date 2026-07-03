@@ -105,7 +105,7 @@ struct HomeScreen: View {
                 .background(skin.buttonFill.opacity(0.6))
                 .cornerRadius(16)
 
-                // 主按钮?
+                // 主按钮
                 VStack(spacing: 12) {
                     Button {
                         showGame = true
@@ -126,7 +126,7 @@ struct HomeScreen: View {
                         HomeButton("🏆", L10n.leaderboard) { showLeaderboard = true }
                         HomeButton("📊", L10n.statistics) { showStats = true }
                         HomeButton("🎨", L10n.skin) { showSkinPicker = true }
-                        HomeButton("📖, L10n.tutorial) { showTutorial = true }
+                        HomeButton("📖", L10n.tutorial) { showTutorial = true }
                     }
                 }
 
