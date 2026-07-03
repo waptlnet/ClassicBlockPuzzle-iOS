@@ -1,0 +1,133 @@
+/* ClassicBlockPuzzle — English Localizable.strings */
+
+// Home
+"app_title"          = "Block Blast Puzzle";
+"app_subtitle"       = "Block Blast Puzzle";
+"high_score"         = "High Score";
+"high_score_fmt"      = "Best %d";
+"streak_days"        = "Day Streak";
+"day_unit"            = "d";
+"start_game"         = "Start Game";
+"leaderboard"        = "Leaderboard";
+"statistics"         = "Stats";
+"skin"               = "Skin";
+"tutorial"           = "How to Play";
+
+// Game UI
+"free_mode"          = "Free Mode";
+"level_mode"         = "Level Mode";
+"daily_challenge"    = "Daily Challenge";
+"survival_mode"      = "Survival · 5×5";
+"level_label"        = "Level %@";
+"level_fmt"          = "Lv.%ld · %@";
+"level_failed"       = "Level Failed";
+"level_name_1"       = "Fresh Start";
+"level_name_2"       = "Apprentice";
+"level_name_3"       = "Getting Good";
+"level_name_4"       = "Skilled";
+"level_name_5"       = "Master";
+"level_name_6"       = "Peak";
+"level_name_7"       = "Virtuoso";
+"level_name_8"       = "Unrivaled";
+"level_name_9"       = "Transcendent";
+"level_name_10"      = "Legend";
+"game_over"          = "Game Over";
+"survival_over"      = "Survival · %d/3 Lives Lost";"survival_lb_fmt"     = "Survival-%d";"confirm_exit"       = "Confirm Exit";
+"cancel"             = "Cancel";
+"exit_to_home"       = "Exit to Home";
+"auto_save_msg"      = "Current progress will be auto-saved";
+"switch_to"          = "%@ ▸";
+
+// Power-ups
+"undo"               = "Undo";
+"hint"               = "Hint";
+"clear_line"         = "Clear";
+"bomb"               = "Bomb";
+
+// Result Dialog
+"new_record"         = "New Record!";
+"score_label"        = "Score";
+"high_score_label"   = "Best";
+"restart"            = "Restart";
+"exit"               = "Exit";
+"level_complete"     = "Level Complete!";
+"score_format"       = "Score: %d";
+"target_format"      = "Target: %d";
+"next_level"         = "Next";
+
+// Settings
+"settings"           = "Settings";
+"sound_section"      = "Sound";
+"mute"               = "Mute";
+"sfx"                = "SFX";
+"bgm"                = "BGM";
+"other_section"      = "Other";
+"agreement"          = "Agree to Terms";
+"done"               = "Done";
+
+// Stats
+"game_data_section"  = "Game Data";
+"games_played"       = "Games Played";
+"times_placed"       = "Blocks Placed";
+"times_rotated"      = "Blocks Rotated";
+"lines_cleared"      = "Lines Cleared";
+"level_section"      = "Levels";
+"levels_completed"   = "Levels Completed";
+"all_levels_cleared" = "All Cleared";
+"daily_section"      = "Daily Challenge";
+"best_streak"        = "Best Streak";
+"current_streak"     = "Current Streak";
+"powerup_section"    = "Power-ups";
+"undos_used"         = "Undos Used";
+"bombs_used"         = "Bombs Used";
+"clear_lines_used"   = "Clears Used";
+"achievement_section" = "Achievements";
+"no_records"         = "No Records";
+
+// Tutorial
+"skip_tutorial"      = "Skip";
+"next_step"          = "Next";
+"tutorial_step0"     = "Welcome to Block Puzzle!\nDrag blocks onto the grid";
+"tutorial_step1"     = "Drag a block to the right spot\nand release to place it";
+"tutorial_step2"     = "Tap a block to rotate it\nEach block has 4 orientations";
+"tutorial_step3"     = "Fill a full row or column to clear it\nThe more lines at once, the higher your score!";
+"tutorial_step4"     = "Use power-ups to get out of trouble\nReady to begin? 🎉";
+
+// Achievements
+"ach_first_clear"    = "First Steps";
+"ach_combo3"         = "Combo Rookie";
+"ach_combo5"         = "Combo Master";
+"ach_clear4_lines"   = "Sweeper";
+"ach_perfect_clear"  = "Spotless";
+"ach_score_1000"     = "Thousand Club";
+"ach_score_5000"     = "Point Hoarder";
+"ach_rotate_100"     = "Spin King";
+"ach_place_500"      = "Diligent Builder";
+"ach_clear_100_lines" = "Cleanup Expert";
+"ach_all_levels"     = "Level Master";
+"ach_daily_7_days"   = "Consistent";
+
+// Achievement Descriptions
+"ach_desc_first_clear"    = "Clear your first line";
+"ach_desc_combo3"         = "Reach 3-combo";
+"ach_desc_combo5"         = "Reach 5-combo";
+"ach_desc_clear4_lines"   = "Clear 4 lines at once";
+"ach_desc_perfect_clear"  = "Perfect clear the entire grid";
+"ach_desc_score_1000"     = "Score 1,000 in one game";
+"ach_desc_score_5000"     = "Score 5,000 in one game";
+"ach_desc_rotate_100"     = "Rotate 100 times total";
+"ach_desc_place_500"      = "Place 500 blocks total";
+"ach_desc_clear_100_lines" = "Clear 100 lines total";
+"ach_desc_all_levels"     = "Complete all 10 levels";
+"ach_desc_daily_7_days"   = "Daily challenge for 7 consecutive days";
+
+// Skins
+"skin_morandi"       = "Morandi";
+"skin_macaron"       = "Macaron";
+"skin_grayscale"     = "Grayscale";
+"skin_ocean"         = "Ocean";
+"skin_lava"          = "Lava";
+"skin_forest"        = "Forest";
+"skin_sunset"        = "Sunset";
+"skin_midnight"      = "Midnight";
+"skin_deep_sea"      = "Deep Sea";

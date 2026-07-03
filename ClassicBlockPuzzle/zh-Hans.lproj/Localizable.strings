@@ -1,0 +1,135 @@
+/* ClassicBlockPuzzle — 中文简体 (zh-Hans) Localizable.strings */
+
+// 主页
+"app_title"          = "方块爆炸拼图";
+"app_subtitle"       = "Block Blast Puzzle";
+"high_score"         = "最高分";
+"high_score_fmt"      = "最高 %d";
+"streak_days"        = "连续打卡";
+"day_unit"            = "天";
+"start_game"         = "开始游戏";
+"leaderboard"        = "排行榜";
+"statistics"         = "统计";
+"skin"               = "皮肤";
+"tutorial"           = "引导";
+
+// 游戏界面
+"free_mode"          = "自由模式";
+"level_mode"         = "关卡模式";
+"daily_challenge"    = "每日挑战";
+"survival_mode"      = "极限挑战 · 5×5";
+"level_label"        = "关卡 %@";
+"level_fmt"          = "第%ld关·%@";
+"level_failed"       = "关卡失败";
+"level_name_1"       = "初入江湖";
+"level_name_2"       = "小试牛刀";
+"level_name_3"       = "渐入佳境";
+"level_name_4"       = "游刃有余";
+"level_name_5"       = "炉火纯青";
+"level_name_6"       = "登峰造极";
+"level_name_7"       = "出神入化";
+"level_name_8"       = "天下无双";
+"level_name_9"       = "超凡入圣";
+"level_name_10"      = "Legend";
+"game_over"          = "游戏结束";
+"survival_over"      = "极限挑战 · %d/3 命耗尽";
+"survival_lb_fmt"     = "极限-%d分";
+"confirm_exit"       = "确认退出";
+"cancel"             = "取消";
+"exit_to_home"       = "退出到主页";
+"auto_save_msg"      = "当前进度将自动保存";
+"switch_to"          = "%@ ▸";
+
+// 道具栏
+"undo"               = "撤销";
+"hint"               = "提示";
+"clear_line"         = "消行";
+"bomb"               = "炸弹";
+
+// 结算弹窗
+"new_record"         = "新纪录！";
+"score_label"        = "得分";
+"high_score_label"   = "最高分";
+"restart"            = "重新开始";
+"exit"               = "退出";
+"level_complete"     = "关卡通过！";
+"score_format"       = "得分：%d";
+"target_format"      = "目标：%d";
+"next_level"         = "下一关";
+
+// 设置
+"settings"           = "设置";
+"sound_section"      = "音效";
+"mute"               = "静音";
+"sfx"                = "音效";
+"bgm"                = "背景音乐";
+"other_section"      = "其他";
+"agreement"          = "同意用户协议";
+"done"               = "完成";
+
+// 统计页
+"game_data_section"  = "游戏数据";
+"games_played"       = "对局数";
+"times_placed"       = "放置次数";
+"times_rotated"      = "旋转次数";
+"lines_cleared"      = "消除行数";
+"level_section"      = "关卡";
+"levels_completed"   = "通关关数";
+"all_levels_cleared" = "全部通关";
+"daily_section"      = "每日挑战";
+"best_streak"        = "最佳连胜";
+"current_streak"     = "当前连胜";
+"powerup_section"    = "道具";
+"undos_used"         = "撤销次数";
+"bombs_used"         = "炸弹次数";
+"clear_lines_used"   = "消行次数";
+"achievement_section" = "成就";
+"no_records"         = "暂无记录";
+
+// 引导
+"skip_tutorial"      = "跳过引导";
+"next_step"          = "下一步";
+"tutorial_step0"     = "欢迎来到经典方块消除！\n滑动下方方块放入网格";
+"tutorial_step1"     = "拖动方块到合适位置\n松开即可放置";
+"tutorial_step2"     = "点击方块可以旋转\n每个方块有4种方向";
+"tutorial_step3"     = "填满一行或一列就会消除\n一次消除越多加分越高！";
+"tutorial_step4"     = "使用道具帮你摆脱困境\n准备好开始了吗？🎉";
+
+// 成就
+"ach_first_clear"    = "初出茅庐";
+"ach_combo3"         = "连击新手";
+"ach_combo5"         = "连击大师";
+"ach_clear4_lines"   = "横扫千军";
+"ach_perfect_clear"  = "一尘不染";
+"ach_score_1000"     = "千分玩家";
+"ach_score_5000"     = "万分达人";
+"ach_rotate_100"     = "旋转之王";
+"ach_place_500"      = "勤劳之手";
+"ach_clear_100_lines" = "消除专家";
+"ach_all_levels"     = "通关大师";
+"ach_daily_7_days"   = "坚持不懈";
+
+// 成就描述
+"ach_desc_first_clear"    = "完成首次消除";
+"ach_desc_combo3"         = "达成3连击";
+"ach_desc_combo5"         = "达成5连击";
+"ach_desc_clear4_lines"   = "单次消除4行";
+"ach_desc_perfect_clear"  = "完美清空整个网格";
+"ach_desc_score_1000"     = "单局达到1000分";
+"ach_desc_score_5000"     = "单局达到5000分";
+"ach_desc_rotate_100"     = "累计旋转100次";
+"ach_desc_place_500"      = "累计放置500次";
+"ach_desc_clear_100_lines" = "累计消除100行";
+"ach_desc_all_levels"     = "通关全部10关";
+"ach_desc_daily_7_days"   = "连续7天每日挑战";
+
+// 皮肤
+"skin_morandi"       = "莫兰迪";
+"skin_macaron"       = "马卡龙";
+"skin_grayscale"     = "灰阶";
+"skin_ocean"         = "海洋";
+"skin_lava"          = "熔岩";
+"skin_forest"        = "森林";
+"skin_sunset"        = "日落";
+"skin_midnight"      = "暗夜";
+"skin_deep_sea"      = "深海";

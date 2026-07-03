@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D00000000000000000000001 /* ClassicBlockPuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000001 /* ClassicBlockPuzzleApp.swift */; };
+		D00000000000000000000002 /* BlockGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000002 /* BlockGenerator.swift */; };
+		D00000000000000000000003 /* DailyChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000003 /* DailyChallenge.swift */; };
+		D00000000000000000000004 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000004 /* GameLogic.swift */; };
+		D00000000000000000000005 /* GeneratorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000005 /* GeneratorConfig.swift */; };
+		D00000000000000000000006 /* ScoreSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000006 /* ScoreSystem.swift */; };
+		D00000000000000000000007 /* SituationEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000007 /* SituationEvaluator.swift */; };
+		D00000000000000000000008 /* SpecialBlockCooldown.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000008 /* SpecialBlockCooldown.swift */; };
+		D00000000000000000000009 /* BlockShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000009 /* BlockShape.swift */; };
+		D0000000000000000000000A /* BlockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000A /* BlockType.swift */; };
+		D0000000000000000000000B /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000B /* Grid.swift */; };
+		D0000000000000000000000C /* LeaderboardEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000C /* LeaderboardEntry.swift */; };
+		D0000000000000000000000D /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000D /* Achievement.swift */; };
+		D0000000000000000000000E /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000E /* Skin.swift */; };
+		D0000000000000000000000F /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000F /* ParticleSystem.swift */; };
+		D00000000000000000000010 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000010 /* SoundManager.swift */; };
+		D00000000000000000000011 /* TutorialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000011 /* TutorialManager.swift */; };
+		D00000000000000000000012 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000012 /* AppPreferences.swift */; };
+		D00000000000000000000013 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000013 /* GameViewModel.swift */; };
+		D00000000000000000000014 /* Dialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000014 /* Dialogs.swift */; };
+		D00000000000000000000015 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000015 /* GameView.swift */; };
+		D00000000000000000000016 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000016 /* Pages.swift */; };
+		D00000000000000000000017 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000019 /* L10n.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C00000000000000000000001 /* ClassicBlockPuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicBlockPuzzleApp.swift; sourceTree = "<group>"; };
+		C00000000000000000000002 /* BlockGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockGenerator.swift; sourceTree = "<group>"; };
+		C00000000000000000000003 /* DailyChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallenge.swift; sourceTree = "<group>"; };
+		C00000000000000000000004 /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		C00000000000000000000005 /* GeneratorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorConfig.swift; sourceTree = "<group>"; };
+		C00000000000000000000006 /* ScoreSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSystem.swift; sourceTree = "<group>"; };
+		C00000000000000000000007 /* SituationEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SituationEvaluator.swift; sourceTree = "<group>"; };
+		C00000000000000000000008 /* SpecialBlockCooldown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialBlockCooldown.swift; sourceTree = "<group>"; };
+		C00000000000000000000009 /* BlockShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockShape.swift; sourceTree = "<group>"; };
+		C0000000000000000000000A /* BlockType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockType.swift; sourceTree = "<group>"; };
+		C0000000000000000000000B /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		C0000000000000000000000C /* LeaderboardEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardEntry.swift; sourceTree = "<group>"; };
+		C0000000000000000000000D /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		C0000000000000000000000E /* Skin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
+		C0000000000000000000000F /* ParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSystem.swift; sourceTree = "<group>"; };
+		C00000000000000000000010 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		C00000000000000000000011 /* TutorialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialManager.swift; sourceTree = "<group>"; };
+		C00000000000000000000012 /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		C00000000000000000000013 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		C00000000000000000000014 /* Dialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialogs.swift; sourceTree = "<group>"; };
+		C00000000000000000000015 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		C00000000000000000000016 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
+		C00000000000000000000017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00000000000000000000018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0000000000000000000000E /* ClassicBlockPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicBlockPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00000000000000000000019 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000002 /* ClassicBlockPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000001 /* App */,
+				B00000000000000000000002 /* Game */,
+				B00000000000000000000005 /* Models */,
+				B00000000000000000000006 /* Services */,
+				B00000000000000000000007 /* ViewModel */,
+				B00000000000000000000008 /* Views */,
+				C00000000000000000000017 /* Info.plist */,
+				C00000000000000000000018 /* Assets.xcassets */,
+			);
+			path = ClassicBlockPuzzle;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0000000000000000000000E /* ClassicBlockPuzzle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000001 /* ClassicBlockPuzzleApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000002 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000003 /* Engine */,
+				B00000000000000000000004 /* Models */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000003 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000002 /* BlockGenerator.swift */,
+				C00000000000000000000003 /* DailyChallenge.swift */,
+				C00000000000000000000004 /* GameLogic.swift */,
+				C00000000000000000000005 /* GeneratorConfig.swift */,
+				C00000000000000000000006 /* ScoreSystem.swift */,
+				C00000000000000000000007 /* SituationEvaluator.swift */,
+				C00000000000000000000008 /* SpecialBlockCooldown.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000004 /* Game Models */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000009 /* BlockShape.swift */,
+				C0000000000000000000000A /* BlockType.swift */,
+				C0000000000000000000000B /* Grid.swift */,
+				C0000000000000000000000C /* LeaderboardEntry.swift */,
+			);
+			name = "Game Models";
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000D /* Achievement.swift */,
+				C0000000000000000000000E /* Skin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000F /* ParticleSystem.swift */,
+				C00000000000000000000010 /* SoundManager.swift */,
+				C00000000000000000000011 /* TutorialManager.swift */,
+				C00000000000000000000019 /* L10n.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000007 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000012 /* AppPreferences.swift */,
+				C00000000000000000000013 /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000009 /* Dialogs */,
+				B0000000000000000000000A /* Game */,
+				B0000000000000000000000B /* Pages */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000009 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000014 /* Dialogs.swift */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000000A /* Game Views */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000015 /* GameView.swift */,
+			);
+			name = "Game Views";
+			path = Game;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000000B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000016 /* Pages.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000004 /* ClassicBlockPuzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000009 /* Build configuration list for PBXNativeTarget "ClassicBlockPuzzle" */;
+			buildPhases = (
+				A00000000000000000000005 /* Sources */,
+				A00000000000000000000006 /* Frameworks */,
+				A00000000000000000000007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClassicBlockPuzzle;
+			productName = ClassicBlockPuzzle;
+			productReference = A0000000000000000000000E /* ClassicBlockPuzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A00000000000000000000004 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000008 /* Build configuration list for PBXProject "ClassicBlockPuzzle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				ja,
+				ko,
+				es,
+				fr,
+				de,
+				"pt-BR",
+				ru,
+				ar,
+				th,
+				vi,
+				id,
+				it,
+				tr,
+				Base,
+			);
+			mainGroup = A00000000000000000000002 /* ClassicBlockPuzzle */;
+			productRefGroup = A00000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000004 /* ClassicBlockPuzzle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00000000000000000000001 /* ClassicBlockPuzzleApp.swift in Sources */,
+				D00000000000000000000002 /* BlockGenerator.swift in Sources */,
+				D00000000000000000000003 /* DailyChallenge.swift in Sources */,
+				D00000000000000000000004 /* GameLogic.swift in Sources */,
+				D00000000000000000000005 /* GeneratorConfig.swift in Sources */,
+				D00000000000000000000006 /* ScoreSystem.swift in Sources */,
+				D00000000000000000000007 /* SituationEvaluator.swift in Sources */,
+				D00000000000000000000008 /* SpecialBlockCooldown.swift in Sources */,
+				D00000000000000000000009 /* BlockShape.swift in Sources */,
+				D0000000000000000000000A /* BlockType.swift in Sources */,
+				D0000000000000000000000B /* Grid.swift in Sources */,
+				D0000000000000000000000C /* LeaderboardEntry.swift in Sources */,
+				D0000000000000000000000D /* Achievement.swift in Sources */,
+				D0000000000000000000000E /* Skin.swift in Sources */,
+				D0000000000000000000000F /* ParticleSystem.swift in Sources */,
+				D00000000000000000000010 /* SoundManager.swift in Sources */,
+				D00000000000000000000011 /* TutorialManager.swift in Sources */,
+				D00000000000000000000012 /* AppPreferences.swift in Sources */,
+				D00000000000000000000013 /* GameViewModel.swift in Sources */,
+				D00000000000000000000014 /* Dialogs.swift in Sources */,
+				D00000000000000000000015 /* GameView.swift in Sources */,
+				D00000000000000000000016 /* Pages.swift in Sources */,
+				D00000000000000000000017 /* L10n.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A0000000000000000000000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0000000000000000000000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0000000000000000000000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClassicBlockPuzzle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "经典方块拼图";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.classicblockpuzzle.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0000000000000000000000D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClassicBlockPuzzle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "经典方块拼图";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.classicblockpuzzle.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000008 /* Build configuration list for PBXProject "ClassicBlockPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000000000000000000000A /* Debug */,
+				A0000000000000000000000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000009 /* Build configuration list for PBXNativeTarget "ClassicBlockPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000000000000000000000C /* Debug */,
+				A0000000000000000000000D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = A00000000000000000000001 /* Project object */;
+}

@@ -1,0 +1,47 @@
+name: Build iOS App
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:   # 允许手动触发
+
+jobs:
+  build:
+    name: Build ClassicBlockPuzzle
+    runs-on: macos-15   # 最新 macOS + Xcode 16
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Show available schemes
+        run: xcodebuild -project ClassicBlockPuzzle.xcodeproj -list
+
+      - name: Build (Release)
+        run: |
+          xcodebuild \
+            -project ClassicBlockPuzzle.xcodeproj \
+            -scheme ClassicBlockPuzzle \
+            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -configuration Release \
+            -sdk iphonesimulator \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+
+      - name: Upload .app artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ClassicBlockPuzzle-App
+          path: |
+            ~/Library/Developer/Xcode/DerivedData/**/Build/Products/Release-iphonesimulator/*.app
+          retention-days: 30
